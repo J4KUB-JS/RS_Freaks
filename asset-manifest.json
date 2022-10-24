@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/RS_Freaks/static/css/main.3ee8ec98.css",
+    "main.js": "/RS_Freaks/static/js/main.b4fdef4b.js",
+    "index.html": "/RS_Freaks/index.html",
+    "main.3ee8ec98.css.map": "/RS_Freaks/static/css/main.3ee8ec98.css.map",
+    "main.b4fdef4b.js.map": "/RS_Freaks/static/js/main.b4fdef4b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ee8ec98.css",
+    "static/js/main.b4fdef4b.js"
+  ]
+}
