@@ -6,7 +6,7 @@ export const NavigationBar = () => {
   return (
     <div className="navBar">
       <div className="navBarLeftSide">
-        <Link to="RS_Freaks/">
+        <Link to="RS_Freaks/Home">
           <img src={rsFreaksLogo} alt="RS freaks logo in square" />
         </Link>
         <ul>

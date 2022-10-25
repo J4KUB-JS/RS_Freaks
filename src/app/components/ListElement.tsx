@@ -11,11 +11,9 @@ export const ListElement = (props: ListElementInterface) => {
   const pageName = useSelector((state: RootState) => state.main.value);
   const dispatch = useDispatch();
 
-  const linkTo = props.name === "Home" ? "" : props.name;
-
   return (
     <li onClick={() => dispatch(changePage(props.name))}>
-      <Link className="listElement" to={"RS_Freaks/" + linkTo}>
+      <Link className="listElement" to={"RS_Freaks/" + props.name}>
         <div>{props.name}</div>
         {pageName === props.name ? <div className="underline"></div> : null}
       </Link>
