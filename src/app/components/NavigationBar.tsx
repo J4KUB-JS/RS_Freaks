@@ -1,25 +1,25 @@
-import console from "console";
-import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import rsFreaksLogo from "../../rs-freaks-logo.svg";
-import { RootState } from "../redux/store";
+import { ListElement } from "./ListElement";
 
 export const NavigationBar = () => {
-  const pageName = useSelector((state: RootState) => state.main.value);
-  const dispatch = useDispatch();
-
   return (
     <div className="navBar">
       <div className="navBarLeftSide">
-        <img src={rsFreaksLogo} alt="RS freaks logo in square" />
+        <Link to="/Home">
+          <img src={rsFreaksLogo} alt="RS freaks logo in square" />
+        </Link>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Events</li>
-          <li>Forum</li>
-          <li>Contact</li>
+          <ListElement name="Home" />
+          <ListElement name="About" />
+          <ListElement name="Events" />
+          <ListElement name="Forum" />
+          <ListElement name="Contact" />
         </ul>
       </div>
-      <button className="button-cta">Join Club</button>
+      <Link to="/JoinClub">
+        <button className="button-cta">Join Club</button>
+      </Link>
     </div>
   );
 };

@@ -5,7 +5,7 @@ export interface MainSliceInterface {
 }
 
 const initialState: MainSliceInterface = {
-  value: "home",
+  value: "Home",
 };
 
 const mainSlice = createSlice({
