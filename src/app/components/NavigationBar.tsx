@@ -6,7 +6,7 @@ export const NavigationBar = () => {
   return (
     <div className="navBar">
       <div className="navBarLeftSide">
-        <Link to="/Home">
+        <Link to="RS_Freaks/Home">
           <img src={rsFreaksLogo} alt="RS freaks logo in square" />
         </Link>
         <ul>
@@ -17,7 +17,7 @@ export const NavigationBar = () => {
           <ListElement name="Contact" />
         </ul>
       </div>
-      <Link to="/JoinClub">
+      <Link to="RS_Freaks/JoinClub">
         <button className="button-cta">Join Club</button>
       </Link>
     </div>

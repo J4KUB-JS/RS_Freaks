@@ -10,12 +10,13 @@ import { NoPage } from "./NoPage";
 export default function RoutesComponent() {
   return (
     <Routes>
-      <Route path="/Home" element={<Home />} />
-      <Route path="/About" element={<About />} />
-      <Route path="/Events" element={<Events />} />
-      <Route path="/Forum" element={<Forum />} />
-      <Route path="/Contact" element={<Contact />} />
-      <Route path="/JoinClub" element={<JoinClub />} />
+      <Route path="RS_Freaks/" element={<Home />} />
+      <Route path="RS_Freaks/Home" element={<Home />} />
+      <Route path="RS_Freaks/About" element={<About />} />
+      <Route path="RS_Freaks/Events" element={<Events />} />
+      <Route path="RS_Freaks/Forum" element={<Forum />} />
+      <Route path="RS_Freaks/Contact" element={<Contact />} />
+      <Route path="RS_Freaks/JoinClub" element={<JoinClub />} />
       <Route path="*" element={<NoPage />} />
     </Routes>
   );
