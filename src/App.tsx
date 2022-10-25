@@ -5,8 +5,7 @@ import { changePage } from "./app/redux/mainSlice";
 import { NavigationBar } from "./app/components/NavigationBar";
 
 function App() {
-  const pageName = useSelector((state: RootState) => state.main.value);
-  const dispatch = useDispatch();
+
 
   return (
     <body>
