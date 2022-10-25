@@ -11,7 +11,6 @@ export default function RoutesComponent() {
   return (
     <Routes>
       <Route path="RS_Freaks/" element={<Home />} />
-      <Route path="RS_Freaks/Home" element={<Home />} />
       <Route path="RS_Freaks/About" element={<About />} />
       <Route path="RS_Freaks/Events" element={<Events />} />
       <Route path="RS_Freaks/Forum" element={<Forum />} />
