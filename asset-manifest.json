@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/RS_Freaks/static/css/main.476954cc.css",
-    "main.js": "/RS_Freaks/static/js/main.13e85af1.js",
+    "main.js": "/RS_Freaks/static/js/main.5c1029d8.js",
     "static/media/rs-freaks-logo.svg": "/RS_Freaks/static/media/rs-freaks-logo.1ea9c6cfc78e73eb88cf8d6a58743aad.svg",
     "index.html": "/RS_Freaks/index.html",
     "main.476954cc.css.map": "/RS_Freaks/static/css/main.476954cc.css.map",
-    "main.13e85af1.js.map": "/RS_Freaks/static/js/main.13e85af1.js.map"
+    "main.5c1029d8.js.map": "/RS_Freaks/static/js/main.5c1029d8.js.map"
   },
   "entrypoints": [
     "static/css/main.476954cc.css",
-    "static/js/main.13e85af1.js"
+    "static/js/main.5c1029d8.js"
   ]
 }
