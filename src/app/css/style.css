@@ -3,6 +3,28 @@
   padding: 0;
   margin: 0; }
 
+html {
+  font-size: 62.5%;
+  overflow-x: hidden; }
+
 body {
   background-color: white;
-  font-size: 25px; }
+  font-size: 2rem; }
+
+.container {
+  margin: 1rem 3rem 0rem; }
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.navBarLeftSide {
+  display: flex;
+  align-items: center;
+  gap: 7rem; }
+
+ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none; }
