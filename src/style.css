@@ -2,55 +2,108 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  letter-spacing: 1px; }
 
 html {
   font-size: 62.5%;
   overflow-x: hidden; }
 
-.container {
-  margin: 1rem 3rem 0rem;
+body {
   background-color: white;
   font-size: 2rem;
   font-family: "Oswald", sans-serif; }
 
+main {
+  margin: 0 3rem; }
+
+ul {
+  text-decoration: none;
+  list-style: none; }
+
 .navBar {
+  margin: 3rem 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between; }
-
-.navBarLeftSide {
-  display: flex;
-  align-items: center;
-  gap: 7rem; }
-
-ul {
-  display: flex;
-  gap: 2rem;
-  list-style: none; }
-
-.listElement {
-  cursor: pointer;
-  color: #232426;
-  text-decoration: none;
-  font-size: 2rem; }
-
-.underline {
-  width: 100%;
-  height: 2px;
-  background-color: #232426;
-  animation: showUnderline 200ms linear 0s; }
+  .navBar .navBarLeftSide {
+    display: flex;
+    align-items: center;
+    gap: 7rem; }
+  .navBar ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none; }
+  .navBar .listElement {
+    cursor: pointer;
+    color: #232426;
+    text-decoration: none;
+    font-size: 2rem; }
+  .navBar .underline {
+    width: 100%;
+    height: 2px;
+    background-color: #232426;
+    animation: showUnderline 200ms linear 0s; }
 
 @keyframes showUnderline {
   from {
     width: 0%; }
   to {
     width: 100%; } }
+  .navBar .button-cta {
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 2.5rem;
+    border: 4px solid #232426;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold; }
 
-.button-cta {
-  cursor: pointer;
-  background-color: transparent;
-  font-size: 2.5rem;
-  border: 4px solid #232426;
-  padding: 0.5rem 1.5rem;
-  font-weight: bold; }
+footer {
+  color: #fdfdfd;
+  background-color: #232426;
+  width: 100%; }
+  footer .footer {
+    padding: 4rem 20rem 2rem;
+    display: flex;
+    justify-content: space-between; }
+  footer .copyright {
+    padding: 0.5rem 0;
+    border-top: 2px solid #fdfdfd;
+    font-size: 1.5rem;
+    grid-column: 1/5;
+    text-align: center;
+    font-weight: normal; }
+  footer h5 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem; }
+  footer .footer--links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+  footer li {
+    font-size: 2rem;
+    font-weight: normal; }
+  footer .social-media-icons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 3rem; }
+  footer .footer--input {
+    border: 2px solid #fdfdfd;
+    display: flex; }
+    footer .footer--input ::placeholder {
+      color: #fdfdfd; }
+    footer .footer--input input {
+      width: 200px;
+      padding: 0.5rem 1rem;
+      font-size: 1.5rem;
+      background-color: transparent;
+      border: none;
+      color: #fdfdfd; }
+    footer .footer--input button {
+      text-transform: uppercase;
+      padding: 0.5rem 1rem;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center; }
