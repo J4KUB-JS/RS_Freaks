@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/%3CRS_Freaks%3E/static/css/main.276d5418.css",
-    "main.js": "/%3CRS_Freaks%3E/static/js/main.0832b483.js",
-    "static/media/rs-freaks-logo.svg": "/%3CRS_Freaks%3E/static/media/rs-freaks-logo.1ea9c6cfc78e73eb88cf8d6a58743aad.svg",
-    "index.html": "/%3CRS_Freaks%3E/index.html",
-    "main.276d5418.css.map": "/%3CRS_Freaks%3E/static/css/main.276d5418.css.map",
-    "main.0832b483.js.map": "/%3CRS_Freaks%3E/static/js/main.0832b483.js.map"
+    "main.css": "/RS_Freaks/static/css/main.276d5418.css",
+    "main.js": "/RS_Freaks/static/js/main.27bde666.js",
+    "static/media/rs-freaks-logo.svg": "/RS_Freaks/static/media/rs-freaks-logo.1ea9c6cfc78e73eb88cf8d6a58743aad.svg",
+    "index.html": "/RS_Freaks/index.html",
+    "main.276d5418.css.map": "/RS_Freaks/static/css/main.276d5418.css.map",
+    "main.27bde666.js.map": "/RS_Freaks/static/js/main.27bde666.js.map"
   },
   "entrypoints": [
     "static/css/main.276d5418.css",
-    "static/js/main.0832b483.js"
+    "static/js/main.27bde666.js"
   ]
 }
