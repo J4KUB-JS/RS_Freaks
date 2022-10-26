@@ -13,7 +13,7 @@ export const ListElement = (props: ListElementInterface) => {
 
   return (
     <li onClick={() => dispatch(changePage(props.name))}>
-      <Link className="listElement" to={"RS_Freaks/" + props.name}>
+      <Link className="listElement" to={"/" + props.name}>
         <div>{props.name}</div>
         {pageName === props.name ? <div className="underline"></div> : null}
       </Link>
