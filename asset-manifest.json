@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/RS_Freaks/static/css/main.276d5418.css",
-    "main.js": "/RS_Freaks/static/js/main.c3b2e85c.js",
+    "main.css": "/RS_Freaks/static/css/main.d34f9e0e.css",
+    "main.js": "/RS_Freaks/static/js/main.89c9bf1a.js",
     "static/media/rs-freaks-logo.svg": "/RS_Freaks/static/media/rs-freaks-logo.1ea9c6cfc78e73eb88cf8d6a58743aad.svg",
+    "static/media/instagram.svg": "/RS_Freaks/static/media/instagram.3c99d7359b2623dc21aa024dce571193.svg",
+    "static/media/facebook.svg": "/RS_Freaks/static/media/facebook.2fb1342176ab32370444c64f18d86394.svg",
     "index.html": "/RS_Freaks/index.html",
-    "main.276d5418.css.map": "/RS_Freaks/static/css/main.276d5418.css.map",
-    "main.c3b2e85c.js.map": "/RS_Freaks/static/js/main.c3b2e85c.js.map"
+    "static/media/youtube.svg": "/RS_Freaks/static/media/youtube.07704250f4da4a6b1bcc8f1297f0236d.svg",
+    "main.d34f9e0e.css.map": "/RS_Freaks/static/css/main.d34f9e0e.css.map",
+    "main.89c9bf1a.js.map": "/RS_Freaks/static/js/main.89c9bf1a.js.map"
   },
   "entrypoints": [
-    "static/css/main.276d5418.css",
-    "static/js/main.c3b2e85c.js"
+    "static/css/main.d34f9e0e.css",
+    "static/js/main.89c9bf1a.js"
   ]
 }
