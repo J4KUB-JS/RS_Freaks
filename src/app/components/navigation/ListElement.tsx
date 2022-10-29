@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../redux/store";
-import { changePage } from "../../app/redux/mainSlice";
+import { RootState } from "../../redux/store";
+import { changePage, closeMenu } from "../../redux/mainSlice";
 import { Link } from "react-router-dom";
 
 interface ListElementInterface {
@@ -10,9 +10,14 @@ interface ListElementInterface {
 export const ListElement = (props: ListElementInterface) => {
   const pageName = useSelector((state: RootState) => state.main.value);
   const dispatch = useDispatch();
+  const clickHandler = () => {
+    console.log("close");
+    dispatch(changePage(props.name));
+    dispatch(closeMenu());
+  };
 
   return (
-    <li onClick={() => dispatch(changePage(props.name))}>
+    <li onClick={clickHandler}>
       <Link className="listElement" to={"/" + props.name}>
         <div>{props.name}</div>
         {pageName === props.name ? <div className="underline"></div> : null}

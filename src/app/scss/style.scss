@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
+@import "responsiveMixin";
 
 $black: #232426;
+$drop-shadow: #23242650;
 $white: #fdfdfd;
+$accent-white: #e3e3e3;
+$accent-black: #2b2a2a;
+$gray: #646464;
 
 * {
   box-sizing: border-box;
@@ -14,64 +19,12 @@ html {
   overflow-x: hidden;
 }
 body {
-  background-color: white;
+  color: $black;
   font-size: 2rem;
   font-family: "Oswald", sans-serif;
 }
 main {
   margin: 0 3rem;
 }
-ul {
-  text-decoration: none;
-  list-style: none;
-}
-.navBar {
-  margin: 3rem 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
-  .navBarLeftSide {
-    display: flex;
-    align-items: center;
-    gap: 7rem;
-  }
-
-  ul {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-  }
-  .listElement {
-    cursor: pointer;
-    color: $black;
-    text-decoration: none;
-    font-size: 2rem;
-  }
-
-  .underline {
-    width: 100%;
-    height: 2px;
-    background-color: $black;
-    animation: showUnderline 200ms linear 0s;
-  }
-  @keyframes showUnderline {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 100%;
-    }
-  }
-
-  .button-cta {
-    cursor: pointer;
-    background-color: transparent;
-    font-size: 2.5rem;
-    border: 4px solid $black;
-    padding: 0.5rem 1.5rem;
-    font-weight: bold;
-  }
-}
-
-@import "footer";
+@import "_components.scss";

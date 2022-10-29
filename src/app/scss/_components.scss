@@ -1,0 +1,97 @@
+//HeadLine Component
+.headline {
+  max-width: 700px;
+  display: block;
+}
+.main-heading {
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.firstPartHeading {
+  font-size: 20rem;
+}
+.secondPartHeading {
+  margin-left: 2.5rem;
+  font-size: 15rem;
+}
+.main-subHeading {
+  margin-top: -4.5rem;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+.section-heading {
+  font-size: 9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.section-subHeading {
+  font-size: 2.2rem;
+}
+
+// Image Component
+.image--horizontal {
+  width: 100%;
+  aspect-ratio: 16/9;
+  filter: drop-shadow(10px 15px 20px $drop-shadow);
+}
+.image--vertical {
+  width: 100%;
+  aspect-ratio: 12/16;
+  filter: drop-shadow(10px 15px 20px $drop-shadow);
+}
+
+//Background Text Component
+.background-text {
+  color: $accent-white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.small {
+  font-size: 14rem;
+}
+.medium {
+  font-size: 16rem;
+}
+.big {
+  font-size: 20rem;
+}
+
+//Text Group Small Component
+.label {
+  color: $accent-black;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.text {
+  margin-top: 1rem;
+  color: $accent-black;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+//Text Group Component
+.textGroup {
+  max-width: 600px;
+}
+.TextGroup-title {
+  font-size: 7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.TextGroup-text {
+  font-size: 2rem;
+  margin: 2rem 0 3rem;
+}
+.TextGroup-spec {
+  margin: 0.5rem 0 5rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.TextGroup-actionBTN {
+  font-size: 3.5rem;
+  color: $black;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
