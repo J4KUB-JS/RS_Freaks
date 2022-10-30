@@ -3,8 +3,15 @@ interface ImageInterface {
   altText: string;
 }
 
-export const ImageHorizontal = (props: ImageInterface) => {
+export const ImageHorizontal = ({ imgSrc, altText }: ImageInterface) => {
+  console.log(imgSrc);
   return (
-    <img className="image--horizontal" src={props.imgSrc} alt={props.altText} />
+    <div className="imgContainerH">
+      <img
+        className="image--horizontal"
+        src={require("../../../images/" + imgSrc + ".jpg")}
+        alt={altText}
+      />
+    </div>
   );
 };

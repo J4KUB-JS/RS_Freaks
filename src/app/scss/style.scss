@@ -24,7 +24,8 @@ body {
   font-family: "Oswald", sans-serif;
 }
 main {
-  margin: 0 3rem;
+  margin: 0 10rem;
 }
 
 @import "_components.scss";
+@import "./pages-style/_home.scss";

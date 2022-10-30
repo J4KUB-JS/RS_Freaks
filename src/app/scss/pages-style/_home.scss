@@ -1,0 +1,35 @@
+.headlineSection {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  .HeadlineAdditional {
+    margin-top: 10rem;
+  }
+}
+
+.introductionSection {
+  position: relative;
+  margin-top: -5rem;
+
+  .imgWithText {
+    display: flex;
+    gap: 8rem;
+  }
+  .TGAdditional {
+    margin-top: 10rem;
+  }
+  .BGTextAdditional {
+    position: relative;
+    left: 22rem;
+    top: 6rem;
+  }
+  .BGTextAdditionalTwo {
+    position: relative;
+    top: 5rem;
+  }
+}
+
+.callToActionSection {
+  margin-top: 7rem;
+}

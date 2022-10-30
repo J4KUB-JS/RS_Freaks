@@ -3,8 +3,14 @@ interface ImageInterface {
   altText: string;
 }
 
-export const ImageVertical = (props: ImageInterface) => {
+export const ImageVertical = ({ imgSrc, altText }: ImageInterface) => {
   return (
-    <img className="image--vertical" src={props.imgSrc} alt={props.altText} />
+    <div className="imgContainerV">
+      <img
+        className="image--vertical"
+        src={require("../../../images/" + imgSrc + ".jpg")}
+        alt={altText}
+      />
+    </div>
   );
 };

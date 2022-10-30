@@ -6,6 +6,7 @@ interface TextGroupInterface {
   spec?: string;
   CTAText?: string;
   linkToAction?: string;
+  additionalClass?: string;
 }
 
 export const TextGroup = ({
@@ -14,9 +15,10 @@ export const TextGroup = ({
   spec,
   CTAText,
   linkToAction,
+  additionalClass,
 }: TextGroupInterface) => {
   return (
-    <div className="textGroup">
+    <div className={"textGroup " + additionalClass}>
       <div className="TextGroup-title">{title}</div>
       {spec !== undefined ? <div className="TextGroup-spec">{spec}</div> : null}
       <div className="TextGroup-text">{text}</div>

@@ -15,7 +15,7 @@ body {
   font-family: "Oswald", sans-serif; }
 
 main {
-  margin: 0 3rem; }
+  margin: 0 10rem; }
 
 .headline {
   max-width: 700px;
@@ -31,7 +31,7 @@ main {
 
 .secondPartHeading {
   margin-left: 2.5rem;
-  font-size: 15rem; }
+  font-size: 13rem; }
 
 .main-subHeading {
   margin-top: -4.5rem;
@@ -46,15 +46,21 @@ main {
 .section-subHeading {
   font-size: 2.2rem; }
 
-.image--horizontal {
-  width: 100%;
-  aspect-ratio: 16/9;
+.imgContainerH {
+  position: relative;
+  overflow: hidden;
   filter: drop-shadow(10px 15px 20px #23242650); }
 
-.image--vertical {
-  width: 100%;
-  aspect-ratio: 12/16;
+.imgContainerV {
+  position: relative;
+  overflow: hidden;
   filter: drop-shadow(10px 15px 20px #23242650); }
+
+.image--horizontal {
+  width: 100%; }
+
+.image--vertical {
+  width: 100%; }
 
 .background-text {
   color: #e3e3e3;
@@ -91,7 +97,7 @@ main {
 
 .TextGroup-text {
   font-size: 2rem;
-  margin: 2rem 0 3rem; }
+  margin: 2rem 0 10rem; }
 
 .TextGroup-spec {
   margin: 0.5rem 0 5rem;
@@ -104,3 +110,48 @@ main {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase; }
+
+.CTASection {
+  position: relative; }
+
+.CTA-Headline {
+  position: relative;
+  top: -11rem;
+  left: 11rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12rem;
+  line-height: 12rem; }
+  .CTA-Headline span {
+    margin-left: 13rem; }
+  .CTA-Headline .subText {
+    margin-left: -3rem;
+    font-size: 3.5rem;
+    text-transform: none;
+    font-weight: normal; }
+
+.headlineSection {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem; }
+  .headlineSection .HeadlineAdditional {
+    margin-top: 10rem; }
+
+.introductionSection {
+  position: relative;
+  margin-top: -5rem; }
+  .introductionSection .imgWithText {
+    display: flex;
+    gap: 8rem; }
+  .introductionSection .TGAdditional {
+    margin-top: 10rem; }
+  .introductionSection .BGTextAdditional {
+    position: relative;
+    left: 22rem;
+    top: 6rem; }
+  .introductionSection .BGTextAdditionalTwo {
+    position: relative;
+    top: 5rem; }
+
+.callToActionSection {
+  margin-top: 7rem; }
