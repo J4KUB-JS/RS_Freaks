@@ -130,6 +130,37 @@ main {
     text-transform: none;
     font-weight: normal; }
 
+.navBar {
+  margin: 2rem 5rem 0rem;
+  display: flex;
+  align-items: center; }
+  .navBar img {
+    width: 50%; }
+
+.navBarActions {
+  display: flex;
+  justify-content: space-between;
+  width: 90%; }
+  .navBarActions ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 2.5rem; }
+    .navBarActions ul .listElement {
+      color: #232426;
+      text-decoration: none; }
+  .navBarActions button {
+    font-weight: bold;
+    font-size: 2.5rem;
+    background-color: transparent;
+    border: 3px solid #232426;
+    padding: 0.5rem 1rem; }
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #232426; }
+
 .headlineSection {
   display: flex;
   flex-direction: column;
@@ -155,3 +186,7 @@ main {
 
 .callToActionSection {
   margin-top: 7rem; }
+
+.cta-image {
+  margin-bottom: -1rem;
+  filter: drop-shadow(0 0 0 none); }

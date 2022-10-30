@@ -7,8 +7,7 @@ import { RootState } from "../../redux/store";
 import { ListElement } from "./ListElement";
 
 export const NavigationBarPhone = () => {
-  const isMenuOpen = useSelector((state: RootState) => state.main.isMenuOpen);
-  const dispatch = useDispatch();
+  
   return (
     <div className="navBar">
       <Link to="/">

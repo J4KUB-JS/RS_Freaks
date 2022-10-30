@@ -1,10 +1,16 @@
 import React from "react";
-import { Home } from "./app/components/pages/Home";
+import { Footer } from "./app/components/footer/Footer";
+import { NavigationBarDesktop } from "./app/components/navigation/NavigationBar";
+import RoutesComponent from "./app/components/RoutesComponent";
 
 function App() {
   return (
     <div>
-      <Home />
+      <NavigationBarDesktop />
+      <div>
+        <RoutesComponent />
+      </div>
+      <Footer />
     </div>
   );
 }

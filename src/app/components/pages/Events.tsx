@@ -1,3 +1,3 @@
 export const Events = () => {
-  return <h1>Events</h1>;
+  return <main>Events</main>;
 };
