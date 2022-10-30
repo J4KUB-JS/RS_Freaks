@@ -1,6 +1,6 @@
 interface BackgroundTextInterface {
   text: string;
-  additionalClass: string;
+  additionalClass?: string;
   variant: "big" | "medium" | "small";
 }
 export const BackgroundText = ({
