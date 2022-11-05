@@ -1,12 +1,8 @@
-import { useDispatch, useSelector } from "react-redux";
+import { Menu } from "./Menu";
 import { Link } from "react-router-dom";
-import { RootState } from "../../redux/store";
 import { ListElement } from "./ListElement";
 
-export const NavigationBarDesktop = () => {
-  const isMenuOpen = useSelector((state: RootState) => state.main.isMenuOpen);
-  const dispatch = useDispatch();
-
+export const NavigationBar = () => {
   return (
     <div className="navBar">
       <Link to="/">
@@ -15,18 +11,25 @@ export const NavigationBarDesktop = () => {
           alt="RS freaks logo in square"
         />
       </Link>
-      <div className="navBarActions">
-        <ul>
-          <ListElement name="Home" />
-          <ListElement name="About" />
-          <ListElement name="Events" />
-          <ListElement name="Forum" />
-          <ListElement name="Contact" />
-        </ul>
-        <Link to="/JoinClub">
-          <button className="button-cta">Join Club</button>
-        </Link>
-      </div>
+      {window.innerWidth > 1000 ? (
+        <div className="navBarActions">
+          <ul>
+            <ListElement name="Home" />
+            <ListElement name="About" />
+            <ListElement name="Events" />
+            <ListElement name="Forum" />
+            <ListElement name="Contact" />
+          </ul>
+          <Link to="/JoinClub">
+            {/* <div className="button-wrapper"> */}
+            <button className="button-cta">Join Club</button>
+            {/* <div className="button-effect"></div> */}
+            {/* </div> */}
+          </Link>
+        </div>
+      ) : (
+        <Menu />
+      )}
     </div>
   );
 };

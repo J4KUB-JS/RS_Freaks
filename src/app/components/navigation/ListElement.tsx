@@ -11,9 +11,9 @@ export const ListElement = (props: ListElementInterface) => {
   const pageName = useSelector((state: RootState) => state.main.value);
   const dispatch = useDispatch();
   const clickHandler = () => {
-    console.log("close");
+    // console.log("close");
     dispatch(changePage(props.name));
-    dispatch(closeMenu());
+    // dispatch(closeMenu());
   };
 
   return (

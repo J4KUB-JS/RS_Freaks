@@ -1,7 +1,8 @@
 .navBar {
-  margin: 2rem 5rem 0rem;
+  margin: 2rem 5rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   img {
     width: 50%;
@@ -11,6 +12,8 @@
 .navBarActions {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
   width: 90%;
   ul {
     display: flex;
@@ -23,11 +26,63 @@
     }
   }
 
+  .underline {
+    background-color: $black;
+    height: 2px;
+    width: 100%;
+    animation: 0.2s linear underlineAnimation;
+  }
+
+  @keyframes underlineAnimation {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  .button-wrapper {
+    margin-top: 3rem;
+    position: relative;
+
+    button {
+      position: relative;
+      z-index: 2;
+      top: 0;
+      font-weight: bold;
+      font-size: 2.5rem;
+      background-color: $white;
+      border: 3px solid $black;
+      padding: 0.5rem 1rem;
+    }
+
+    .button-effect {
+      position: relative;
+      left: 0.7rem;
+      top: -3.7rem;
+      width: 100%;
+      height: 4.5rem;
+      font-weight: bold;
+      font-size: 2.5rem;
+      background-color: $white;
+      border: 3px solid $black;
+      padding: 0.5rem 1rem;
+    }
+  }
+
   button {
+    position: relative;
+    z-index: 2;
+    top: 0;
     font-weight: bold;
     font-size: 2.5rem;
-    background-color: transparent;
+    background-color: $white;
     border: 3px solid $black;
     padding: 0.5rem 1rem;
   }
+}
+
+.icon {
+  background-color: $black;
 }

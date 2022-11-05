@@ -131,15 +131,17 @@ main {
     font-weight: normal; }
 
 .navBar {
-  margin: 2rem 5rem 0rem;
+  margin: 2rem 5rem;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-between; }
   .navBar img {
     width: 50%; }
 
 .navBarActions {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 90%; }
   .navBarActions ul {
     display: flex;
@@ -149,12 +151,52 @@ main {
     .navBarActions ul .listElement {
       color: #232426;
       text-decoration: none; }
+  .navBarActions .underline {
+    background-color: #232426;
+    height: 2px;
+    width: 100%;
+    animation: 0.2s linear underlineAnimation; }
+
+@keyframes underlineAnimation {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+  .navBarActions .button-wrapper {
+    margin-top: 3rem;
+    position: relative; }
+    .navBarActions .button-wrapper button {
+      position: relative;
+      z-index: 2;
+      top: 0;
+      font-weight: bold;
+      font-size: 2.5rem;
+      background-color: #fdfdfd;
+      border: 3px solid #232426;
+      padding: 0.5rem 1rem; }
+    .navBarActions .button-wrapper .button-effect {
+      position: relative;
+      left: 0.7rem;
+      top: -3.7rem;
+      width: 100%;
+      height: 4.5rem;
+      font-weight: bold;
+      font-size: 2.5rem;
+      background-color: #fdfdfd;
+      border: 3px solid #232426;
+      padding: 0.5rem 1rem; }
   .navBarActions button {
+    position: relative;
+    z-index: 2;
+    top: 0;
     font-weight: bold;
     font-size: 2.5rem;
-    background-color: transparent;
+    background-color: #fdfdfd;
     border: 3px solid #232426;
     padding: 0.5rem 1rem; }
+
+.icon {
+  background-color: #232426; }
 
 footer {
   width: 100%;
@@ -173,6 +215,7 @@ footer {
   margin-top: -5rem; }
   .introductionSection .imgWithText {
     display: flex;
+    justify-content: space-between;
     gap: 8rem; }
   .introductionSection .TGAdditional {
     margin-top: 10rem; }
