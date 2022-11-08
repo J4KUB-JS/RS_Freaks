@@ -5,29 +5,67 @@
 
   .HeadlineAdditional {
     margin-top: 10rem;
+    @include tablet {
+      margin-top: 6rem;
+    }
   }
 }
 
 .introductionSection {
-  position: relative;
-  margin-top: -5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 3fr;
+  column-gap: 8rem;
 
-  .imgWithText {
-    display: flex;
-    justify-content: space-between;
-    gap: 8rem;
+  @include tablet {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 4fr;
+    column-gap: 0rem;
   }
-  .TGAdditional {
-    margin-top: 10rem;
-  }
+
   .BGTextAdditional {
     position: relative;
-    left: 22rem;
-    top: 6rem;
+    top: 20px;
+    justify-self: end;
+    grid-column: 1/3;
   }
+
+  .TGAdditionalOne {
+    margin-top: 10rem;
+    @include tablet {
+      margin-top: 0;
+      grid-column: 1/3;
+    }
+  }
+  .ImgAdditionalOne {
+    justify-self: end;
+    @include tablet {
+      justify-self: center;
+    }
+  }
+
   .BGTextAdditionalTwo {
     position: relative;
-    top: 5rem;
+    top: 40px;
+    justify-self: start;
+    grid-column: 1/3;
+  }
+  .TGAdditionalTwo {
+    margin-top: 10rem;
+    justify-self: end;
+    @include tablet {
+      justify-self: start;
+      margin-top: 0;
+      grid-column: 1/3;
+      grid-row: 2/3;
+    }
+  }
+  .ImgAdditionalTwo {
+    justify-self: start;
+    @include tablet {
+      justify-self: center;
+      width: 95%;
+    }
   }
 }
 
@@ -36,6 +74,6 @@
 }
 
 .cta-image {
-  margin-bottom: -1rem;
-  filter: drop-shadow(0 0 0 none);
+  margin-top: -6rem;
+  margin-bottom: 5rem;
 }

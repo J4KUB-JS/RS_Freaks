@@ -2,35 +2,40 @@
 .headline {
   max-width: 700px;
   display: block;
-}
-.main-heading {
-  font-weight: bold;
-  font-style: italic;
-  text-transform: uppercase;
-}
-.firstPartHeading {
-  font-size: 20rem;
-}
-.secondPartHeading {
-  margin-left: 2.5rem;
-  font-size: 13rem;
-}
-.main-subHeading {
-  margin-top: -4.5rem;
-  font-size: 5rem;
-  text-transform: uppercase;
-}
-.section-heading {
-  font-size: 9rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.section-subHeading {
-  font-size: 2.2rem;
+
+  .main-heading {
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+  .firstPartHeading {
+    font-size: clamp(4rem, 20vw, 20rem);
+  }
+  .secondPartHeading {
+    margin-left: 20px;
+    font-size: clamp(2rem, 15vw, 15rem);
+  }
+  .main-subHeading {
+    margin-top: -4.5rem;
+    font-size: clamp(3rem, 5vw, 5rem);
+    text-transform: uppercase;
+    @include tablet {
+      margin-top: -2rem;
+    }
+  }
+  .section-heading {
+    font-size: 9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .section-subHeading {
+    font-size: 2.2rem;
+  }
 }
 
 // Image Component
 .imgContainerH {
+  max-width: 100%;
   position: relative;
   overflow: hidden;
   filter: drop-shadow(10px 15px 20px $drop-shadow);
@@ -54,13 +59,34 @@
   font-weight: bold;
 }
 .small {
-  font-size: 14rem;
+  font-size: clamp(5rem, 10vw, 12rem);
+
+  // font-size: 12rem;
+  // @include desktop {
+  //   font-size: 10rem;
+  // }
+  // @include laptop {
+  //   font-size: 8rem;
+  // }
+  // @include tablet {
+  //   font-size: 5rem;
+  // }
 }
 .medium {
-  font-size: 16rem;
+  font-size: clamp(6rem, 12vw, 14rem);
 }
 .big {
-  font-size: 20rem;
+  font-size: clamp(10rem, 10vw, 20rem);
+  // font-size: 20rem;
+  // @include desktop {
+  //   font-size: 16rem;
+  // }
+  // @include laptop {
+  //   font-size: 14rem;
+  // }
+  // @include tablet {
+  //   font-size: 11rem;
+  // }
 }
 
 //Text Group Small Component
@@ -78,16 +104,19 @@
 
 //Text Group Component
 .textGroup {
-  max-width: 600px;
+  // max-width: 600px;
 }
 .TextGroup-title {
-  font-size: 7rem;
+  font-size: clamp(5rem, 5vw, 6rem);
+  // background-color: aqua;
+  // font-size: 6rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 .TextGroup-text {
   font-size: 2rem;
-  margin: 2rem 0 10rem;
+  max-width: 50ch;
+  margin: 2rem 0 8rem;
 }
 .TextGroup-spec {
   margin: 0.5rem 0 5rem;
@@ -104,15 +133,19 @@
 //CTA Section component
 .CTASection {
   position: relative;
+  @include tablet {
+    margin-top: 10rem;
+  }
 }
 .CTA-Headline {
   position: relative;
-  top: -11rem;
-  left: 11rem;
+  top: clamp(-8rem, -5vw, -11rem);
+  left: 10rem;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 12rem;
-  line-height: 12rem;
+  font-size: clamp(10rem, 5vw, 12rem);
+
+  line-height: clamp(10rem, 5vw, 12rem);
 
   & span {
     margin-left: 13rem;

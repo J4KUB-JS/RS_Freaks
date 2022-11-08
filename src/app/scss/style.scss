@@ -24,7 +24,21 @@ body {
   font-family: "Oswald", sans-serif;
 }
 main {
-  margin: 0 10rem;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 10rem;
+  @include desktop {
+    padding: 0 8rem;
+  }
+  @include laptop {
+    padding: 0 5rem;
+  }
+  @include tablet {
+    padding: 0 5rem;
+  }
+  @include phone {
+    padding: 0 2rem;
+  }
 }
 
 @import "_components.scss";

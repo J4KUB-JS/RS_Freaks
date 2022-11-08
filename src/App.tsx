@@ -5,13 +5,14 @@ import RoutesComponent from "./app/components/RoutesComponent";
 
 function App() {
   return (
-    <div>
+    <>
+      <div>{window.innerWidth}</div>
       <NavigationBar />
-      {/* <div>
-        <RoutesComponent />
-      </div>
-      <Footer /> */}
-    </div>
+
+      <RoutesComponent />
+
+      <Footer />
+    </>
   );
 }
 
