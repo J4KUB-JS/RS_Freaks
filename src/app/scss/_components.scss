@@ -73,7 +73,7 @@
   // }
 }
 .medium {
-  font-size: clamp(6rem, 12vw, 14rem);
+  font-size: clamp(6rem, 10vw, 14rem);
 }
 .big {
   font-size: clamp(10rem, 10vw, 20rem);
@@ -116,7 +116,10 @@
 .TextGroup-text {
   font-size: 2rem;
   max-width: 50ch;
-  margin: 2rem 0 8rem;
+  margin: 2rem 0 5rem;
+  @include tablet {
+    margin: 2rem 0 4rem;
+  }
 }
 .TextGroup-spec {
   margin: 0.5rem 0 5rem;
@@ -124,7 +127,7 @@
   text-transform: uppercase;
 }
 .TextGroup-actionBTN {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: $black;
   text-decoration: none;
   font-weight: bold;
@@ -134,25 +137,25 @@
 .CTASection {
   position: relative;
   @include tablet {
-    margin-top: 10rem;
+    margin-top: 7rem;
   }
 }
 .CTA-Headline {
   position: relative;
-  top: clamp(-8rem, -5vw, -11rem);
-  left: 10rem;
+  top: clamp(-4rem, -10vw, -12rem);
+  left: clamp(2rem, 10vw, 10rem);
   text-transform: uppercase;
   font-weight: bold;
-  font-size: clamp(10rem, 5vw, 12rem);
+  font-size: clamp(6rem, 10vw, 12rem);
 
-  line-height: clamp(10rem, 5vw, 12rem);
+  line-height: clamp(6rem, 10vw, 12rem);
 
   & span {
     margin-left: 13rem;
   }
   .subText {
     margin-left: -3rem;
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
     text-transform: none;
     font-weight: normal;
   }

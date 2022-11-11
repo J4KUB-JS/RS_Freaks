@@ -54,7 +54,7 @@ export const Home = () => {
         />
         <TextGroup
           additionalClass="TGAdditionalTwo"
-          title="Driving with passion"
+          title="What we drive"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat tellus cras purus, dui. Sed lacus pretium sit risus, amet. Sit tincidunt eget auctor aliquam viverra vulputate eget."
           CTAText="Cars in Club"
           linkToAction="About"
@@ -64,11 +64,11 @@ export const Home = () => {
       <section className="callToActionSection">
         <CTASection />
 
-        <ImageHorizontal
+        {/* <ImageHorizontal
           additionalClass="cta-image"
           imgSrc="car-meet"
           altText="3 cars in line"
-        />
+        /> */}
       </section>
     </main>
   );

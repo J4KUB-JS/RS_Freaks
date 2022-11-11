@@ -83,7 +83,7 @@ main {
   font-size: clamp(5rem, 10vw, 12rem); }
 
 .medium {
-  font-size: clamp(6rem, 12vw, 14rem); }
+  font-size: clamp(6rem, 10vw, 14rem); }
 
 .big {
   font-size: clamp(10rem, 10vw, 20rem); }
@@ -107,7 +107,10 @@ main {
 .TextGroup-text {
   font-size: 2rem;
   max-width: 50ch;
-  margin: 2rem 0 8rem; }
+  margin: 2rem 0 5rem; }
+  @media (max-width: 900px) {
+    .TextGroup-text {
+      margin: 2rem 0 4rem; } }
 
 .TextGroup-spec {
   margin: 0.5rem 0 5rem;
@@ -115,7 +118,7 @@ main {
   text-transform: uppercase; }
 
 .TextGroup-actionBTN {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #232426;
   text-decoration: none;
   font-weight: bold;
@@ -125,21 +128,21 @@ main {
   position: relative; }
   @media (max-width: 900px) {
     .CTASection {
-      margin-top: 10rem; } }
+      margin-top: 7rem; } }
 
 .CTA-Headline {
   position: relative;
-  top: clamp(-8rem, -5vw, -11rem);
-  left: 10rem;
+  top: clamp(-4rem, -10vw, -12rem);
+  left: clamp(2rem, 10vw, 10rem);
   text-transform: uppercase;
   font-weight: bold;
-  font-size: clamp(10rem, 5vw, 12rem);
-  line-height: clamp(10rem, 5vw, 12rem); }
+  font-size: clamp(6rem, 10vw, 12rem);
+  line-height: clamp(6rem, 10vw, 12rem); }
   .CTA-Headline span {
     margin-left: 13rem; }
   .CTA-Headline .subText {
     margin-left: -3rem;
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
     text-transform: none;
     font-weight: normal; }
 
@@ -229,43 +232,41 @@ footer {
 .introductionSection {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 1fr auto;
   column-gap: 8rem; }
   @media (max-width: 900px) {
     .introductionSection {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 2fr 4fr;
+      grid-template-rows: 1fr auto auto;
       column-gap: 0rem; } }
   .introductionSection .BGTextAdditional {
-    position: relative;
-    top: 20px;
     justify-self: end;
     grid-column: 1/3; }
   .introductionSection .TGAdditionalOne {
-    margin-top: 10rem; }
+    margin-top: 6rem; }
     @media (max-width: 900px) {
       .introductionSection .TGAdditionalOne {
         margin-top: 0;
-        grid-column: 1/3; } }
+        grid-column: 1/3;
+        margin: 1rem 0 5rem; } }
   .introductionSection .ImgAdditionalOne {
     justify-self: end; }
     @media (max-width: 900px) {
       .introductionSection .ImgAdditionalOne {
         justify-self: center; } }
   .introductionSection .BGTextAdditionalTwo {
-    position: relative;
-    top: 40px;
     justify-self: start;
     grid-column: 1/3; }
   .introductionSection .TGAdditionalTwo {
-    margin-top: 10rem;
+    margin-top: 6rem;
     justify-self: end; }
     @media (max-width: 900px) {
       .introductionSection .TGAdditionalTwo {
         justify-self: start;
-        margin-top: 0;
+        margin-top: 0rem;
         grid-column: 1/3;
-        grid-row: 2/3; } }
+        grid-row: 2/3;
+        margin: 1rem 0 5rem; } }
   .introductionSection .ImgAdditionalTwo {
     justify-self: start; }
     @media (max-width: 900px) {
