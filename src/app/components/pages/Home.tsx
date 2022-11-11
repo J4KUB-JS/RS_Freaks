@@ -16,7 +16,7 @@ export const Home = () => {
           subHeading="Drive and don't look back"
         />
         <ImageHorizontal
-          imgSrc="yellow-supra"
+          imgSrc="audi"
           altText="yellow toyota supra next to gas station"
         />
       </section>
