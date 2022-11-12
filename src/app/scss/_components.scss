@@ -60,33 +60,12 @@
 }
 .small {
   font-size: clamp(5rem, 10vw, 12rem);
-
-  // font-size: 12rem;
-  // @include desktop {
-  //   font-size: 10rem;
-  // }
-  // @include laptop {
-  //   font-size: 8rem;
-  // }
-  // @include tablet {
-  //   font-size: 5rem;
-  // }
 }
 .medium {
   font-size: clamp(6rem, 10vw, 14rem);
 }
 .big {
   font-size: clamp(10rem, 10vw, 20rem);
-  // font-size: 20rem;
-  // @include desktop {
-  //   font-size: 16rem;
-  // }
-  // @include laptop {
-  //   font-size: 14rem;
-  // }
-  // @include tablet {
-  //   font-size: 11rem;
-  // }
 }
 
 //Text Group Small Component
@@ -108,8 +87,6 @@
 }
 .TextGroup-title {
   font-size: clamp(5rem, 5vw, 6rem);
-  // background-color: aqua;
-  // font-size: 6rem;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -147,7 +124,6 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: clamp(6rem, 10vw, 12rem);
-
   line-height: clamp(6rem, 10vw, 12rem);
 
   & span {

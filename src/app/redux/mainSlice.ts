@@ -20,14 +20,11 @@ const mainSlice = createSlice({
     changePage: (state, action: PayloadAction<string>) => {
       state.value = action.payload;
     },
-    openMenu: (state) => {
-      state.isMenuOpen = true;
-    },
-    closeMenu: (state) => {
-      state.isMenuOpen = false;
+    openCloseMenu: (state) => {
+      state.isMenuOpen = !state.isMenuOpen;
     },
   },
 });
 
-export const { changePage, openMenu, closeMenu } = mainSlice.actions;
+export const { changePage, openCloseMenu } = mainSlice.actions;
 export default mainSlice.reducer;

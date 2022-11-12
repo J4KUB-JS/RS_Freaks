@@ -6,7 +6,6 @@ import RoutesComponent from "./app/components/RoutesComponent";
 function App() {
   return (
     <>
-      <div>{window.innerWidth}</div>
       <NavigationBar />
 
       <RoutesComponent />

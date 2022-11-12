@@ -154,20 +154,23 @@ main {
   .navBar img {
     width: 50%; }
 
-.navBarActions {
+.navBarActionsDesktop {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%; }
-  .navBarActions ul {
+  width: 100%; }
+  @media (max-width: 900px) {
+    .navBarActionsDesktop {
+      display: none; } }
+  .navBarActionsDesktop ul {
     display: flex;
     gap: 2rem;
     list-style: none;
     font-size: 2.5rem; }
-    .navBarActions ul .listElement {
+    .navBarActionsDesktop ul .listElement {
       color: #232426;
       text-decoration: none; }
-  .navBarActions .underline {
+  .navBarActionsDesktop .underline {
     background-color: #232426;
     height: 2px;
     width: 100%;
@@ -178,10 +181,10 @@ main {
     width: 0%; }
   100% {
     width: 100%; } }
-  .navBarActions .button-wrapper {
+  .navBarActionsDesktop .button-wrapper {
     margin-top: 3rem;
     position: relative; }
-    .navBarActions .button-wrapper button {
+    .navBarActionsDesktop .button-wrapper button {
       position: relative;
       z-index: 2;
       top: 0;
@@ -190,7 +193,7 @@ main {
       background-color: #fdfdfd;
       border: 3px solid #232426;
       padding: 0.5rem 1rem; }
-    .navBarActions .button-wrapper .button-effect {
+    .navBarActionsDesktop .button-wrapper .button-effect {
       position: relative;
       left: 0.7rem;
       top: -3.7rem;
@@ -201,7 +204,7 @@ main {
       background-color: #fdfdfd;
       border: 3px solid #232426;
       padding: 0.5rem 1rem; }
-  .navBarActions button {
+  .navBarActionsDesktop button {
     position: relative;
     z-index: 2;
     top: 0;
@@ -210,6 +213,53 @@ main {
     background-color: #fdfdfd;
     border: 3px solid #232426;
     padding: 0.5rem 1rem; }
+
+.navBarActionsMobile {
+  width: 100%;
+  padding: 5rem;
+  background-color: #fdfdfd;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  z-index: 2; }
+  .navBarActionsMobile ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    font-size: 2.5rem; }
+    .navBarActionsMobile ul .listElement {
+      color: #232426;
+      text-decoration: none; }
+  .navBarActionsMobile .button-wrapper {
+    margin-top: 3rem;
+    position: relative; }
+    .navBarActionsMobile .button-wrapper button {
+      position: relative;
+      z-index: 2;
+      top: 0;
+      font-weight: bold;
+      font-size: 2.5rem;
+      background-color: #fdfdfd;
+      border: 3px solid #232426;
+      padding: 0.5rem 1rem; }
+    .navBarActionsMobile .button-wrapper .button-effect {
+      position: relative;
+      left: 0.7rem;
+      top: -3.7rem;
+      width: 19.5%;
+      height: 4.5rem;
+      font-weight: bold;
+      font-size: 2.5rem;
+      background-color: #fdfdfd;
+      border: 3px solid #232426;
+      padding: 0.5rem 1rem; }
+
+.MenuIcon {
+  display: none; }
+  @media (max-width: 900px) {
+    .MenuIcon {
+      display: block; } }
 
 .icon {
   background-color: #232426; }
