@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/RS_Freaks/static/css/main.dc7f9672.css",
-    "main.js": "/RS_Freaks/static/js/main.5820c45d.js",
+    "main.css": "/RS_Freaks/static/css/main.25e434aa.css",
+    "main.js": "/RS_Freaks/static/js/main.34971da9.js",
+    "static/media/porsche-silver.jpg": "/RS_Freaks/static/media/porsche-silver.39760c201766609269ac.jpg",
+    "static/media/audi-rs3.jpg": "/RS_Freaks/static/media/audi-rs3.2cf92dad6ee361be99cb.jpg",
+    "static/media/porscheGT.jpg": "/RS_Freaks/static/media/porscheGT.3cddf208a8256abf342d.jpg",
     "static/media/car-meet.jpg": "/RS_Freaks/static/media/car-meet.c5216699ed89fc110a9e.jpg",
     "static/media/yellow-supra.jpg": "/RS_Freaks/static/media/yellow-supra.9fb5f08aa56f0ca8cc1e.jpg",
     "static/media/porsches.jpg": "/RS_Freaks/static/media/porsches.a55be71ddb180cf26d09.jpg",
+    "static/media/audi-snow.jpg": "/RS_Freaks/static/media/audi-snow.e71eca371eedb1465dda.jpg",
     "static/media/audi.jpg": "/RS_Freaks/static/media/audi.ea863439eeccd17567e5.jpg",
     "static/media/orange-porsche.jpg": "/RS_Freaks/static/media/orange-porsche.5fe7d535cbe057ff85a3.jpg",
     "index.html": "/RS_Freaks/index.html",
-    "main.dc7f9672.css.map": "/RS_Freaks/static/css/main.dc7f9672.css.map",
-    "main.5820c45d.js.map": "/RS_Freaks/static/js/main.5820c45d.js.map"
+    "main.25e434aa.css.map": "/RS_Freaks/static/css/main.25e434aa.css.map",
+    "main.34971da9.js.map": "/RS_Freaks/static/js/main.34971da9.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc7f9672.css",
-    "static/js/main.5820c45d.js"
+    "static/css/main.25e434aa.css",
+    "static/js/main.34971da9.js"
   ]
 }
