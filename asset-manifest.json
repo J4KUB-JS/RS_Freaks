@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/RS_Freaks/static/css/main.381a6fa5.css",
-    "main.js": "/RS_Freaks/static/js/main.803be81f.js",
+    "main.css": "/RS_Freaks/static/css/main.dc7f9672.css",
+    "main.js": "/RS_Freaks/static/js/main.5820c45d.js",
     "static/media/car-meet.jpg": "/RS_Freaks/static/media/car-meet.c5216699ed89fc110a9e.jpg",
     "static/media/yellow-supra.jpg": "/RS_Freaks/static/media/yellow-supra.9fb5f08aa56f0ca8cc1e.jpg",
     "static/media/porsches.jpg": "/RS_Freaks/static/media/porsches.a55be71ddb180cf26d09.jpg",
     "static/media/audi.jpg": "/RS_Freaks/static/media/audi.ea863439eeccd17567e5.jpg",
     "static/media/orange-porsche.jpg": "/RS_Freaks/static/media/orange-porsche.5fe7d535cbe057ff85a3.jpg",
     "index.html": "/RS_Freaks/index.html",
-    "main.381a6fa5.css.map": "/RS_Freaks/static/css/main.381a6fa5.css.map",
-    "main.803be81f.js.map": "/RS_Freaks/static/js/main.803be81f.js.map"
+    "main.dc7f9672.css.map": "/RS_Freaks/static/css/main.dc7f9672.css.map",
+    "main.5820c45d.js.map": "/RS_Freaks/static/js/main.5820c45d.js.map"
   },
   "entrypoints": [
-    "static/css/main.381a6fa5.css",
-    "static/js/main.803be81f.js"
+    "static/css/main.dc7f9672.css",
+    "static/js/main.5820c45d.js"
   ]
 }
