@@ -1,0 +1,14 @@
+.contactSection {
+  display: grid;
+  gap: 10rem;
+  grid-template-columns: 1fr 1fr;
+}
+.contactDetails {
+  margin-top: 10rem;
+  display: grid;
+  row-gap: 5rem;
+  column-gap: 10rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+

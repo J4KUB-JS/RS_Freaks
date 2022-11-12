@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { BackgroundText } from "../pages-components/BackGroundText";
 import { CTASection } from "../pages-components/CTASection";
 import { Headline } from "../pages-components/Headline";
@@ -6,6 +7,10 @@ import { ImageVertical } from "../pages-components/ImageVertical";
 import { TextGroup } from "../pages-components/TextGroup";
 
 export const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main>
       <section className="headlineSection">

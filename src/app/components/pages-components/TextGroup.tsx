@@ -1,4 +1,6 @@
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { changePage } from "../../redux/mainSlice";
 
 interface TextGroupInterface {
   title: string;
@@ -17,13 +19,30 @@ export const TextGroup = ({
   linkToAction,
   additionalClass,
 }: TextGroupInterface) => {
+  const dispatch = useDispatch();
+  const clickHandler = () => {
+    if (linkToAction !== undefined) {
+      dispatch(changePage(linkToAction));
+    }
+  };
+
   return (
     <div className={"textGroup " + additionalClass}>
       <div className="TextGroup-title">{title}</div>
-      {spec !== undefined ? <div className="TextGroup-spec">{spec}</div> : null}
+      {spec !== undefined ? (
+        <div className="TextGroup-spec">
+          {spec.split(",").map((item) => {
+            return <span>{item}</span>;
+          })}
+        </div>
+      ) : null}
       <div className="TextGroup-text">{text}</div>
       {CTAText !== undefined ? (
-        <Link className="TextGroup-actionBTN" to={"/" + linkToAction}>
+        <Link
+          onClick={clickHandler}
+          className="TextGroup-actionBTN"
+          to={"/" + linkToAction}
+        >
           {CTAText} &gt;
         </Link>
       ) : null}
