@@ -138,14 +138,19 @@
   }
 }
 
-.MenuIcon {
+.menuIcon {
   display: none;
 
   @include tablet {
     display: block;
   }
+  img {
+    width: 100%;
+  }
 }
-
-.icon {
-  background-color: $black;
+.closeIcon {
+  width: 40px;
+  img {
+    width: 100%;
+  }
 }

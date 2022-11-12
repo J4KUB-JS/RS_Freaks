@@ -37,13 +37,15 @@ export const NavigationBar = () => {
           </ul>
           <CTAButton text="Join Club" />
         </div>
-        <button className="MenuIcon" onClick={menuButtonChandler}>
-          Open
-        </button>
+        <div className="menuIcon" onClick={menuButtonChandler}>
+          <img src={require("../../../images/menu.jpg")} alt="menu icon" />
+        </div>
       </div>
       {isMenuOpen ? (
         <div className="navBarActionsMobile">
-          <button onClick={menuButtonChandler}>Close</button>
+          <div className="closeIcon" onClick={menuButtonChandler}>
+            <img src={require("../../../images/close.jpg")} alt="menu icon" />
+          </div>
           <ul>
             <ListElement name="Home" closeMenu={menuButtonChandler} />
             <ListElement name="About" closeMenu={menuButtonChandler} />

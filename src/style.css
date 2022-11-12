@@ -255,14 +255,18 @@ main {
       border: 3px solid #232426;
       padding: 0.5rem 1rem; }
 
-.MenuIcon {
+.menuIcon {
   display: none; }
   @media (max-width: 900px) {
-    .MenuIcon {
+    .menuIcon {
       display: block; } }
+  .menuIcon img {
+    width: 100%; }
 
-.icon {
-  background-color: #232426; }
+.closeIcon {
+  width: 40px; }
+  .closeIcon img {
+    width: 100%; }
 
 footer {
   width: 100%;
