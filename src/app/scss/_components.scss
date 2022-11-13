@@ -80,14 +80,14 @@
   max-width: 15ch;
   margin-top: 1rem;
   color: $accent-black;
-  font-size: 2rem;
+  font-size: clamp(1rem, 20vw, 1.8rem);
   font-weight: 400;
 }
 
 //Text Group Component
-.textGroup {
-  // max-width: 600px;
-}
+// .textGroup {
+//   // max-width: 600px;
+// }
 .TextGroup-title {
   font-size: clamp(5rem, 5vw, 6rem);
   font-weight: bold;

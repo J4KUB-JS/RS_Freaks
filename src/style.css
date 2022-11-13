@@ -99,7 +99,7 @@ main {
   max-width: 15ch;
   margin-top: 1rem;
   color: #2b2a2a;
-  font-size: 2rem;
+  font-size: clamp(1rem, 20vw, 1.8rem);
   font-weight: 400; }
 
 .TextGroup-title {
@@ -369,6 +369,10 @@ footer {
   display: grid;
   gap: 10rem;
   grid-template-columns: 1fr 1fr; }
+  @media (max-width: 1024px) {
+    .contactSection {
+      grid-template-columns: 1fr;
+      gap: 0; } }
 
 .contactDetails {
   margin-top: 10rem;
@@ -377,3 +381,15 @@ footer {
   column-gap: 10rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr; }
+  @media (max-width: 1024px) {
+    .contactDetails {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5rem; } }
+  @media (max-width: 900px) {
+    .contactDetails {
+      max-width: 600px;
+      grid-template-columns: 1fr 1fr; } }
+
+@media (max-width: 1024px) {
+  .additionalIMG {
+    display: none; } }
