@@ -55,9 +55,9 @@ main {
     font-weight: bold;
     text-transform: uppercase; }
   .headline .section-subHeading {
-    width: 60ch;
+    max-width: 60ch;
     margin-top: 4rem;
-    font-size: clamp(1rem, 5vw, 2.5rem); }
+    font-size: clamp(1rem, 5vw, 2rem); }
 
 .imgContainerH {
   max-width: 100%;
@@ -119,7 +119,7 @@ main {
   display: flex;
   gap: 3rem;
   margin: 0.5rem 0 5rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: uppercase; }
 
 .TextGroup-actionBTN {
@@ -339,11 +339,26 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12rem;
-  margin: 20rem 0; }
+  margin: 10rem 0;
+  align-items: center; }
+  @media (max-width: 900px) {
+    .carDescriptionOne {
+      justify-items: center;
+      grid-template-columns: 1fr;
+      gap: 5rem; } }
 
 .description {
   display: flex;
   flex-direction: column; }
+
+@media (max-width: 900px) {
+  .ImgAdditionalOne {
+    max-width: 500px;
+    grid-row: 2/3; } }
+
+@media (max-width: 1024px) {
+  .BGTextAdditional {
+    display: none; } }
 
 .section {
   display: flex;

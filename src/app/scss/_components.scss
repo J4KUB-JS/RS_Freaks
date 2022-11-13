@@ -29,9 +29,9 @@
     text-transform: uppercase;
   }
   .section-subHeading {
-    width: 60ch;
+    max-width: 60ch;
     margin-top: 4rem;
-    font-size: clamp(1rem, 5vw, 2.5rem);
+    font-size: clamp(1rem, 5vw, 2rem);
   }
 }
 
@@ -105,7 +105,7 @@
   display: flex;
   gap: 3rem;
   margin: 0.5rem 0 5rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 .TextGroup-actionBTN {

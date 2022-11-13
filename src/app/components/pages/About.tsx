@@ -33,11 +33,15 @@ export const About = () => {
         <div className="description">
           <TextGroup
             additionalClass="descriptionAdditional"
-            title="Mike's audi rs3"
+            title="Audi rs3"
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna pharetra neque, amet pharetra. Turpis quis magna id iaculis at feugiat donec. Tincidunt viverra eu odio ut pulvinar mattis nibh suscipit vitae. Porta nunc sit habitant faucibus. Porta aliquet dolor ipsum sed. Morbi sapien, sed rutrum posuere morbi diam quis ante."
-            spec="Engine: I5 2.5L, HP: 400, nm: 400, Weight: 1570 kg"
+            spec={["I5 2.5L", "430", "400", "1570"]}
           />
-          <BackgroundText variant="big" text="RS 3" />
+          <BackgroundText
+            additionalClass="BGTextAdditional"
+            variant="big"
+            text="RS 3"
+          />
         </div>
       </div>
 
@@ -45,14 +49,14 @@ export const About = () => {
         <div className="description">
           <TextGroup
             additionalClass="TGAdditionalOne"
-            title="Jacks Porsche 911"
+            title="Porsche 911"
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna pharetra neque, amet pharetra. Turpis quis magna id iaculis at feugiat donec. Tincidunt viverra eu odio ut pulvinar mattis nibh suscipit vitae. Porta nunc sit habitant faucibus. Porta aliquet dolor ipsum sed. Morbi sapien, sed rutrum posuere morbi diam quis ante."
-            spec="Engine: F6 3.0L, HP: 432, NM: 510, Weight: 1670 kg "
+            spec={["F6 3.0L", "432", "510", "1670"]}
           />
           <BackgroundText
             additionalClass="BGTextAdditional"
             variant="big"
-            text="RS 3"
+            text="911"
           />
         </div>
 

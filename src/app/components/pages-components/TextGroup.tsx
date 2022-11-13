@@ -5,7 +5,7 @@ import { changePage } from "../../redux/mainSlice";
 interface TextGroupInterface {
   title: string;
   text: string;
-  spec?: string;
+  spec?: string[];
   CTAText?: string;
   linkToAction?: string;
   additionalClass?: string;
@@ -31,9 +31,26 @@ export const TextGroup = ({
       <div className="TextGroup-title">{title}</div>
       {spec !== undefined ? (
         <div className="TextGroup-spec">
-          {spec.split(",").map((item) => {
-            return <span>{item}</span>;
-          })}
+          <span>
+            Engine: <br></br>
+            {spec[0]}
+          </span>
+          <span>
+            Power: <br></br>
+            {spec[1]}
+          </span>
+          <span>
+            NM: <br></br>
+            {spec[2]}
+          </span>
+          <span>
+            Weight: <br></br>
+            {spec[3]} kg
+          </span>
+          {/* {spec.split(",").map((item) => {
+            const itemName= item.split(":")[0]
+            return <span>{itemName}</span>;
+          })} */}
         </div>
       ) : null}
       <div className="TextGroup-text">{text}</div>
