@@ -393,3 +393,37 @@ footer {
 @media (max-width: 1024px) {
   .additionalIMG {
     display: none; } }
+
+.joinClubSection {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.card {
+  border: 3px solid #232426;
+  padding: 2rem; }
+  .card .headline {
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: bold; }
+  .card form {
+    margin-top: 3rem; }
+  .card .inputElement {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem; }
+    .card .inputElement input {
+      font-size: 2.5rem;
+      border: 2px solid #232426; }
+  .card button {
+    width: 100%;
+    margin-top: 3rem;
+    background-color: #fdfdfd;
+    border: 3px solid #232426;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 0.2rem 1rem; }
+  .card .login {
+    margin-top: 1rem;
+    font-size: 1.8rem; }
