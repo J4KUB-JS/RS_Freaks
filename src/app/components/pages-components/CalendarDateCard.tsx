@@ -1,4 +1,3 @@
-import { ImageHorizontal } from "./ImageHorizontal";
 import { ImageVertical } from "./ImageVertical";
 
 interface CalendarDateCardInterface {

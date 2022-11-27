@@ -5,7 +5,6 @@ import { CalendarDateCard } from "../pages-components/CalendarDateCard";
 import { CalendarHeading } from "../pages-components/CalendarHeading";
 import { Headline } from "../pages-components/Headline";
 import { ImageHorizontal } from "../pages-components/ImageHorizontal";
-import { TextGroup } from "../pages-components/TextGroup";
 
 export const Events = () => {
   useEffect(() => {
