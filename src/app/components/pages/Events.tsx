@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { BackgroundText } from "../pages-components/BackGroundText";
 import { Calendar } from "../pages-components/Calendar";
+import { CalendarDateCard } from "../pages-components/CalendarDateCard";
+import { CalendarHeading } from "../pages-components/CalendarHeading";
 import { Headline } from "../pages-components/Headline";
 import { ImageHorizontal } from "../pages-components/ImageHorizontal";
 import { TextGroup } from "../pages-components/TextGroup";
@@ -30,6 +32,23 @@ export const Events = () => {
         text="Don't miss it"
         variant="small"
       />
+      <div className="prevEventsSection">
+        <CalendarHeading
+          subHeading="previous events"
+          variant="slider"
+          monthName={"September"}
+        />
+        <div className="prevEventsCalendar">
+          <CalendarDateCard
+            date={"01"}
+            text="some text"
+            imgSrc="mercedes-amg"
+          />
+          <CalendarDateCard date={"18"} text="some text" imgSrc="bmw-m2" />
+          <CalendarDateCard date={"26"} text="some text" imgSrc="audi-s5" />
+        </div>
+      </div>
+      <BackgroundText text="Our memories" variant="small" />
     </main>
   );
 };

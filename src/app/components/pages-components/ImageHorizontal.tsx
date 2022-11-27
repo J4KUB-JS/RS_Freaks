@@ -9,7 +9,6 @@ export const ImageHorizontal = ({
   altText,
   additionalClass,
 }: ImageInterface) => {
-  console.log(imgSrc);
   return (
     <div className={"imgContainerH " + additionalClass}>
       <img
