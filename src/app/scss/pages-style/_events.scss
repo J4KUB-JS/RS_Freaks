@@ -1,0 +1,68 @@
+.section {
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  column-gap: 15rem;
+}
+.calendarLeftSide {
+  padding-top: 5rem;
+}
+.calendar {
+  margin-top: 7rem;
+  border-top: 3px solid $black;
+
+  .dateWrapper {
+    position: relative;
+    margin-top: 2rem;
+
+    .subHeading {
+      position: relative;
+      top: 15px;
+      text-transform: uppercase;
+      margin-left: 0.5rem;
+      font-size: 1.5rem;
+    }
+    .monthName {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 5rem;
+    }
+  }
+}
+.calendarGrid {
+  position: relative;
+  top: -20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 5rem;
+  row-gap: 2rem;
+
+  margin-top: 3rem;
+
+  .dateCard {
+  }
+  .calendarCardAdditional {
+    grid-column: 1/3;
+  }
+  .line {
+    background-color: $black;
+    height: 5px;
+    width: 100%;
+  }
+  .eventDate {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  .eventName {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .eventGuest {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: $red;
+  }
+}
+.BGTextAdditional {
+  text-align: end;
+}

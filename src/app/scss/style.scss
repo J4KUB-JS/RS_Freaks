@@ -7,6 +7,7 @@ $white: #fdfdfd;
 $accent-white: #e3e3e3;
 $accent-black: #2b2a2a;
 $gray: #646464;
+$red: #e24f4f;
 
 * {
   box-sizing: border-box;
@@ -49,3 +50,4 @@ main {
 @import "./pages-style/_forum.scss";
 @import "./pages-style/_contact.scss";
 @import "./pages-style/_joinClub.scss";
+@import "./pages-style/events.scss";

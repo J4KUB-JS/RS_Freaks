@@ -29,8 +29,9 @@
     text-transform: uppercase;
   }
   .section-subHeading {
-    max-width: 60ch;
-    margin-top: 4rem;
+    text-transform: uppercase;
+    max-width: 70ch;
+    margin-top: 2rem;
     font-size: clamp(1rem, 5vw, 2rem);
   }
 }
