@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/RS_Freaks/static/css/main.b73a9f07.css",
-    "main.js": "/RS_Freaks/static/js/main.46f2d61d.js",
+    "main.css": "/RS_Freaks/static/css/main.c16e4e8c.css",
+    "main.js": "/RS_Freaks/static/js/main.4d01a980.js",
     "static/media/porsche-silver.jpg": "/RS_Freaks/static/media/porsche-silver.39760c201766609269ac.jpg",
     "static/media/audi-rs3.jpg": "/RS_Freaks/static/media/audi-rs3.2cf92dad6ee361be99cb.jpg",
     "static/media/porscheGT.jpg": "/RS_Freaks/static/media/porscheGT.3cddf208a8256abf342d.jpg",
@@ -10,13 +10,16 @@
     "static/media/porsches.jpg": "/RS_Freaks/static/media/porsches.a55be71ddb180cf26d09.jpg",
     "static/media/audi-snow.jpg": "/RS_Freaks/static/media/audi-snow.e71eca371eedb1465dda.jpg",
     "static/media/audi.jpg": "/RS_Freaks/static/media/audi.ea863439eeccd17567e5.jpg",
+    "static/media/bmw-m2.jpg": "/RS_Freaks/static/media/bmw-m2.dbde14abd9b8ba00610b.jpg",
     "static/media/orange-porsche.jpg": "/RS_Freaks/static/media/orange-porsche.5fe7d535cbe057ff85a3.jpg",
+    "static/media/mercedes-amg.jpg": "/RS_Freaks/static/media/mercedes-amg.d92a81bf99cd653fce22.jpg",
+    "static/media/audi-s5.jpg": "/RS_Freaks/static/media/audi-s5.c4b02da8a35a7008db29.jpg",
     "index.html": "/RS_Freaks/index.html",
-    "main.b73a9f07.css.map": "/RS_Freaks/static/css/main.b73a9f07.css.map",
-    "main.46f2d61d.js.map": "/RS_Freaks/static/js/main.46f2d61d.js.map"
+    "main.c16e4e8c.css.map": "/RS_Freaks/static/css/main.c16e4e8c.css.map",
+    "main.4d01a980.js.map": "/RS_Freaks/static/js/main.4d01a980.js.map"
   },
   "entrypoints": [
-    "static/css/main.b73a9f07.css",
-    "static/js/main.46f2d61d.js"
+    "static/css/main.c16e4e8c.css",
+    "static/js/main.4d01a980.js"
   ]
 }
