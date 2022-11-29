@@ -27,7 +27,11 @@ export const Contact = () => {
           </div>
         </div>
 
-        <ImageVertical additionalClass="additionalIMG" imgSrc="porscheGT" altText="porsche" />
+        <ImageVertical
+          additionalClass="additionalIMG"
+          imgSrc="porscheGT"
+          altText="porsche"
+        />
       </div>
     </main>
   );

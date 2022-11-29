@@ -5,6 +5,7 @@ import { CalendarDateCard } from "../pages-components/CalendarDateCard";
 import { CalendarHeading } from "../pages-components/CalendarHeading";
 import { Headline } from "../pages-components/Headline";
 import { ImageHorizontal } from "../pages-components/ImageHorizontal";
+import { ImageVertical } from "../pages-components/ImageVertical";
 
 export const Events = () => {
   useEffect(() => {
@@ -24,7 +25,16 @@ export const Events = () => {
           <Calendar />
         </div>
 
-        <ImageHorizontal imgSrc="orange-porsche" altText="porsche" />
+        <ImageVertical
+          additionalClass="additionalImgVertical"
+          imgSrc="orange-porsche"
+          altText="porsche"
+        />
+        <ImageHorizontal
+          additionalClass="additionalImgHorizontal"
+          imgSrc="audi"
+          altText="porsche"
+        />
       </div>
       <BackgroundText
         additionalClass="BGTextAdditional"

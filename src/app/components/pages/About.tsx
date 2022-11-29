@@ -18,10 +18,9 @@ export const About = () => {
           imgSrc="audi"
           altText="audi"
         />
-        <Headline
-          heading="Cars are what maters"
-          subHeading="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna pharetra neque, amet pharetra. Turpis quis magna id iaculis at feugiat donec. Tincidunt viverra eu odio ut pulvinar mattis nibh suscipit vitae. Porta nunc sit habitant faucibus. Porta aliquet dolor ipsum sed. Morbi sapien, sed rutrum posuere morbi diam quis ante."
-          variant="section"
+        <TextGroup
+          title="Cars are what maters"
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna pharetra neque, amet pharetra. Turpis quis magna id iaculis at feugiat donec. Tincidunt viverra eu odio ut pulvinar mattis nibh suscipit vitae. Porta nunc sit habitant faucibus. Porta aliquet dolor ipsum sed. Morbi sapien, sed rutrum posuere morbi diam quis ante."
         />
       </div>
       <div className="carDescriptionOne">
