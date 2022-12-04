@@ -109,7 +109,7 @@ main {
   text-transform: uppercase; }
 
 .TextGroup-text {
-  font-size: 2rem;
+  font-size: 1.8rem;
   max-width: 50ch;
   margin: 2rem 0 5rem; }
   @media (max-width: 900px) {
@@ -120,7 +120,7 @@ main {
   display: flex;
   gap: 3rem;
   margin: 0.5rem 0 5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase; }
 
 .TextGroup-actionBTN {
@@ -418,6 +418,8 @@ footer {
       font-size: 2.5rem;
       border: 2px solid #232426; }
   .card button {
+    background-color: #fdfdfd;
+    color: #232426;
     width: 100%;
     margin-top: 3rem;
     background-color: #fdfdfd;
@@ -426,8 +428,13 @@ footer {
     font-weight: bold;
     padding: 0.2rem 1rem; }
   .card .login {
+    color: #646464;
     margin-top: 1rem;
     font-size: 1.8rem; }
+    .card .login a,
+    .card .login a:active,
+    .card .login a:visited {
+      color: #646464; }
 
 .section {
   display: grid;
