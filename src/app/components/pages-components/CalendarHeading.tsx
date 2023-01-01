@@ -1,6 +1,5 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { loadNextEvents, loadPrevEvents } from "../../redux/eventsSlice";
-import { RootState } from "../../redux/store";
 
 interface CalendarHeadingInterface {
   monthName: string;

@@ -1,30 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 import moment from "moment";
-import { idText } from "typescript";
 
 // const pageName = useSelector((state: RootState) => state.main.value);
 // const dispatch = useDispatch();
-
-const dummyEventsValue: EventDataInterface[] = [
-  {
-    id: 7,
-    eventName: "Miray Night Park",
-    date: "10-8-2022",
-    img: "audi-s5",
-  },
-  {
-    id: 8,
-    eventName: "Carpark Wolmart",
-    date: "07-8-2022",
-    img: "mercedes-amg",
-  },
-  {
-    id: 9,
-    eventName: "Track Mania day",
-    date: "27-8-2022",
-    img: "mercedes-amg",
-  },
-];
 
 interface EventDataInterface {
   id: number;
