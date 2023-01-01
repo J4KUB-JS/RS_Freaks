@@ -32,7 +32,7 @@ export const About = () => {
         <div className="description">
           <TextGroup
             additionalClass="descriptionAdditional"
-            title="Audi rs3"
+            title="Audi rs3"     
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna pharetra neque, amet pharetra. Turpis quis magna id iaculis at feugiat donec. Tincidunt viverra eu odio ut pulvinar mattis nibh suscipit vitae. Porta nunc sit habitant faucibus. Porta aliquet dolor ipsum sed. Morbi sapien, sed rutrum posuere morbi diam quis ante."
             spec={["I5 2.5L", "430", "400", "1570"]}
           />

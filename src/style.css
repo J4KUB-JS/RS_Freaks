@@ -470,13 +470,13 @@ footer {
   margin-top: 2rem; }
   .dateWrapper .subHeading {
     position: relative;
-    top: 15px;
+    top: 5px;
     text-transform: uppercase;
     margin-left: 0.5rem;
     font-size: 2rem; }
   .dateWrapper .subHeadingSlider {
     position: relative;
-    top: 15px;
+    top: 5px;
     text-transform: uppercase;
     margin-left: 4rem;
     font-size: 2rem; }
@@ -537,14 +537,17 @@ footer {
 .prevEventsCalendar {
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 10rem; }
+  grid-template-columns: auto auto auto auto;
+  column-gap: 5rem;
+  row-gap: 5rem; }
   @media (max-width: 900px) {
     .prevEventsCalendar {
-      gap: 5rem; } }
+      column-gap: 5rem;
+      row-gap: 2rem; } }
   @media (max-width: 650px) {
     .prevEventsCalendar {
-      gap: 2rem; } }
+      column-gap: 2rem;
+      row-gap: 0.5rem; } }
 
 .additionalImgVertical {
   align-self: center; }

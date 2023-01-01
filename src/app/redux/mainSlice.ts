@@ -23,8 +23,11 @@ const mainSlice = createSlice({
     openCloseMenu: (state) => {
       state.isMenuOpen = !state.isMenuOpen;
     },
+    loadPrevEvents: (state) => {
+      state.isMenuOpen = !state.isMenuOpen;
+    },
   },
 });
 
-export const { changePage, openCloseMenu } = mainSlice.actions;
+export const { changePage, openCloseMenu, loadPrevEvents } = mainSlice.actions;
 export default mainSlice.reducer;

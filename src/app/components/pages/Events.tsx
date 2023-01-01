@@ -1,16 +1,23 @@
 import { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "../../redux/store";
 import { BackgroundText } from "../pages-components/BackGroundText";
 import { Calendar } from "../pages-components/Calendar";
 import { CalendarDateCard } from "../pages-components/CalendarDateCard";
 import { CalendarHeading } from "../pages-components/CalendarHeading";
 import { Headline } from "../pages-components/Headline";
-import { ImageHorizontal } from "../pages-components/ImageHorizontal";
 import { ImageVertical } from "../pages-components/ImageVertical";
 
 export const Events = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const currentMonth = useSelector(
+    (state: RootState) => state.event.value.currentMonth
+  );
+  const currentShownEvents = useSelector(
+    (state: RootState) => state.event.value.currentShownEvents
+  );
 
   return (
     <main>
@@ -20,7 +27,7 @@ export const Events = () => {
             additionalClass="headlineAdditional"
             variant="section"
             heading="Calendar"
-            subHeading="Don’t aks JUSt GEt in the car and see you there"
+            subHeading="Don’t aks just get in the car and see you on the spot"
           />
           <Calendar />
         </div>
@@ -28,11 +35,6 @@ export const Events = () => {
         <ImageVertical
           additionalClass="additionalImgVertical"
           imgSrc="orange-porsche"
-          altText="porsche"
-        />
-        <ImageHorizontal
-          additionalClass="additionalImgHorizontal"
-          imgSrc="audi"
           altText="porsche"
         />
       </div>
@@ -45,16 +47,17 @@ export const Events = () => {
         <CalendarHeading
           subHeading="previous events"
           variant="slider"
-          monthName={"September"}
+          monthName={currentMonth}
         />
         <div className="prevEventsCalendar">
-          <CalendarDateCard
-            date={"01"}
-            text="some text"
-            imgSrc="mercedes-amg"
-          />
-          <CalendarDateCard date={"18"} text="some text" imgSrc="bmw-m2" />
-          <CalendarDateCard date={"26"} text="some text" imgSrc="audi-s5" />
+          {currentShownEvents.map((event) => (
+            <CalendarDateCard
+              key={event.id}
+              date={event.date}
+              text={event.eventName}
+              imgSrc={event.img}
+            />
+          ))}
         </div>
       </div>
       <BackgroundText text="Our memories" variant="small" />

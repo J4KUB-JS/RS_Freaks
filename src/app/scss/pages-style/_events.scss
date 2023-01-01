@@ -34,7 +34,7 @@
 
   .subHeading {
     position: relative;
-    top: 15px;
+    top: 5px;
     text-transform: uppercase;
     margin-left: 0.5rem;
     font-size: 2rem;
@@ -42,7 +42,7 @@
 
   .subHeadingSlider {
     position: relative;
-    top: 15px;
+    top: 5px;
     text-transform: uppercase;
     margin-left: 4rem;
     font-size: 2rem;
@@ -81,6 +81,8 @@
 }
 
 .dateCard {
+  // max-height: 300px;
+  // overflow: hidden;
   cursor: pointer;
 }
 
@@ -116,14 +118,17 @@
 .prevEventsCalendar {
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 10rem;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 5rem;
+  row-gap: 5rem;
 
   @include tablet {
-    gap: 5rem;
+    column-gap: 5rem;
+    row-gap: 2rem;
   }
   @include phone {
-    gap: 2rem;
+    column-gap: 2rem;
+    row-gap: 0.5rem;
   }
 }
 .additionalImgVertical {

@@ -16,7 +16,7 @@ export const CalendarDateCard = ({
   imgSrc,
 }: CalendarDateCardInterface) => {
   const specialGuest = subText !== undefined ? `(${subText})` : null;
-  console.log(imgSrc);
+
   return (
     <div className={"dateCard " + additionalClass}>
       <div className="line"></div>
