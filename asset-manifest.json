@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/RS_Freaks/static/css/main.f8d368ce.css",
-    "main.js": "/RS_Freaks/static/js/main.7762cc8e.js",
+    "main.css": "/RS_Freaks/static/css/main.6f27839c.css",
+    "main.js": "/RS_Freaks/static/js/main.0a80a9fd.js",
     "static/media/porsche-silver.jpg": "/RS_Freaks/static/media/porsche-silver.39760c201766609269ac.jpg",
     "static/media/audi-rs3.jpg": "/RS_Freaks/static/media/audi-rs3.2cf92dad6ee361be99cb.jpg",
     "static/media/porscheGT.jpg": "/RS_Freaks/static/media/porscheGT.3cddf208a8256abf342d.jpg",
@@ -15,11 +15,11 @@
     "static/media/mercedes-amg.jpg": "/RS_Freaks/static/media/mercedes-amg.d92a81bf99cd653fce22.jpg",
     "static/media/audi-s5.jpg": "/RS_Freaks/static/media/audi-s5.c4b02da8a35a7008db29.jpg",
     "index.html": "/RS_Freaks/index.html",
-    "main.f8d368ce.css.map": "/RS_Freaks/static/css/main.f8d368ce.css.map",
-    "main.7762cc8e.js.map": "/RS_Freaks/static/js/main.7762cc8e.js.map"
+    "main.6f27839c.css.map": "/RS_Freaks/static/css/main.6f27839c.css.map",
+    "main.0a80a9fd.js.map": "/RS_Freaks/static/js/main.0a80a9fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8d368ce.css",
-    "static/js/main.7762cc8e.js"
+    "static/css/main.6f27839c.css",
+    "static/js/main.0a80a9fd.js"
   ]
 }
