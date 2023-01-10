@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
-import { RootState } from "../../redux/store";
-import { BackgroundText } from "../pages-components/BackGroundText";
-import { Calendar } from "../pages-components/Calendar";
-import { CalendarDateCard } from "../pages-components/CalendarDateCard";
-import { CalendarHeading } from "../pages-components/CalendarHeading";
-import { Headline } from "../pages-components/Headline";
-import { ImageVertical } from "../pages-components/ImageVertical";
+import { RootState } from "../redux/store";
+import { BackgroundText } from "../components/BackGroudText/BackGroundText";
+import { Headline } from "../components/HeadLines/Headline";
+import { Calendar } from "../components/Calendar/Calendar";
+import { CalendarDateCard } from "../components/Calendar/CalendarDateCard";
+import { ImageVertical } from "../components/ImageWrapper/ImageVertical";
+import { CalendarHeading } from "../components/Calendar/CalendarHeading";
 
 export const Events = () => {
   useEffect(() => {

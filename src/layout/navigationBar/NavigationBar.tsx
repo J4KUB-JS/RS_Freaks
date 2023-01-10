@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { ListElement } from "./ListElement";
 import { CTAButton } from "./CTAButton";
-import { changePage, openCloseMenu } from "../../redux/mainSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
+import { changePage, openCloseMenu } from "../../redux/mainSlice";
 
 export const NavigationBar = () => {
   const dispatch = useDispatch();
@@ -23,7 +23,7 @@ export const NavigationBar = () => {
         <Link to="/">
           <img
             onClick={clickHandler}
-            src={require("../../../images/rs-logo.png")}
+            src={require("../../assets/icons/rs-logo.png")}
             alt="RS freaks logo in square"
           />
         </Link>
@@ -38,13 +38,16 @@ export const NavigationBar = () => {
           <CTAButton text="Join Club" />
         </div>
         <div className="menuIcon" onClick={menuButtonChandler}>
-          <img src={require("../../../images/menu.jpg")} alt="menu icon" />
+          <img src={require("../../assets/icons/menu.jpg")} alt="menu icon" />
         </div>
       </div>
       {isMenuOpen ? (
         <div className="navBarActionsMobile">
           <div className="closeIcon" onClick={menuButtonChandler}>
-            <img src={require("../../../images/close.jpg")} alt="menu icon" />
+            <img
+              src={require("../../assets/icons/close.jpg")}
+              alt="menu icon"
+            />
           </div>
           <ul>
             <ListElement name="Home" closeMenu={menuButtonChandler} />

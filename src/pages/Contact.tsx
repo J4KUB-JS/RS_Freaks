@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import { ImageVertical } from "../pages-components/ImageVertical";
-import { TextGroup } from "../pages-components/TextGroup";
-import { TextGroupSmall } from "../pages-components/TextGroupSmall";
+import { ImageVertical } from "../components/ImageWrapper/ImageVertical";
+import { TextGroup } from "../components/TextGroups/TextGroup";
+import { TextGroupSmall } from "../components/TextGroups/TextGroupSmall";
 
 export const Contact = () => {
   useEffect(() => {
@@ -26,7 +26,6 @@ export const Contact = () => {
             <TextGroupSmall label="Social media" text="FB IG YT" />
           </div>
         </div>
-
         <ImageVertical
           additionalClass="additionalIMG"
           imgSrc="porscheGT"

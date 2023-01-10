@@ -1,10 +1,9 @@
 import { useEffect } from "react";
-import { BackgroundText } from "../pages-components/BackGroundText";
-import { CTASection } from "../pages-components/CTASection";
-import { Headline } from "../pages-components/Headline";
-import { ImageHorizontal } from "../pages-components/ImageHorizontal";
-import { ImageVertical } from "../pages-components/ImageVertical";
-import { TextGroup } from "../pages-components/TextGroup";
+import { BackgroundText } from "../components/BackGroudText/BackGroundText";
+import { Headline } from "../components/HeadLines/Headline";
+import { ImageHorizontal } from "../components/ImageWrapper/ImageHorizontal";
+import { ImageVertical } from "../components/ImageWrapper/ImageVertical";
+import { TextGroup } from "../components/TextGroups/TextGroup";
 
 export const Home = () => {
   useEffect(() => {
@@ -67,13 +66,16 @@ export const Home = () => {
       </section>
 
       <section className="callToActionSection">
-        <CTASection />
-
-        {/* <ImageHorizontal
-          additionalClass="cta-image"
-          imgSrc="car-meet"
-          altText="3 cars in line"
-        /> */}
+        <div className="CTASection">
+          <BackgroundText variant="medium" text="RS Club" />
+          <div className="CTA-Headline">
+            <div>See you on</div>
+            <span>next meet</span>
+            <div className="subText">
+              Check out <u>upcoming events</u> in calendar
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );

@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-import { About } from "./pages/About";
-import { Contact } from "./pages/Contact";
-import { Events } from "./pages/Events";
-import { Forum } from "./pages/Forum";
-import { Home } from "./pages/Home";
-import { JoinClub } from "./pages/JoinClub";
-import { NoPage } from "./pages/NoPage";
+import { About } from "../pages/About";
+import { Contact } from "../pages/Contact";
+import { Events } from "../pages/Events";
+import { Forum } from "../pages/Forum";
+import { Home } from "../pages/Home";
+import { JoinClub } from "../pages/JoinClub";
+import { NoPage } from "../pages/NoPage";
 
 export default function RoutesComponent() {
   return (

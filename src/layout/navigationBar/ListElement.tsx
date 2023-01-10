@@ -1,7 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../../redux/store";
-import { changePage } from "../../redux/mainSlice";
+
 import { Link } from "react-router-dom";
+import { changePage } from "../../redux/mainSlice";
+import { RootState } from "../../redux/store";
 
 interface ListElementInterface {
   name: string;

@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
-import { changePage } from "../../redux/mainSlice";
 import { Link } from "react-router-dom";
+import { changePage } from "../../redux/mainSlice";
 
 interface CTAButtonInterface {
   text: string;

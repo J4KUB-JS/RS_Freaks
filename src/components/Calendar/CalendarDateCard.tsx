@@ -1,4 +1,4 @@
-import { ImageVertical } from "./ImageVertical";
+import { ImageVertical } from "../ImageWrapper/ImageVertical";
 
 interface CalendarDateCardInterface {
   date: string;

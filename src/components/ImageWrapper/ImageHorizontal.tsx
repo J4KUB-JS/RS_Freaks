@@ -4,16 +4,16 @@ interface ImageInterface {
   additionalClass?: string;
 }
 
-export const ImageVertical = ({
+export const ImageHorizontal = ({
   imgSrc,
   altText,
   additionalClass,
 }: ImageInterface) => {
   return (
-    <div className={"imgContainerV  " + additionalClass}>
+    <div className={"imgContainerH " + additionalClass}>
       <img
-        className="image--vertical"
-        src={require("../../../images/" + imgSrc + ".jpg")}
+        className="image--horizontal"
+        src={require("../../assets/images/" + imgSrc + ".jpg")}
         alt={altText}
       />
     </div>

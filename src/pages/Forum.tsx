@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { ImageHorizontal } from "../pages-components/ImageHorizontal";
-import { TextGroup } from "../pages-components/TextGroup";
+import { ImageHorizontal } from "../components/ImageWrapper/ImageHorizontal";
+import { TextGroup } from "../components/TextGroups/TextGroup";
 
 export const Forum = () => {
   useEffect(() => {

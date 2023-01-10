@@ -1,7 +1,6 @@
-import React from "react";
-import { Footer } from "./app/components/footer/Footer";
-import { NavigationBar } from "./app/components/navigation/NavigationBar";
-import RoutesComponent from "./app/components/RoutesComponent";
+import { Footer } from "./layout/footer/Footer";
+import { NavigationBar } from "./layout/navigationBar/NavigationBar";
+import RoutesComponent from "./routes/RoutesComponent";
 
 function App() {
   return (
